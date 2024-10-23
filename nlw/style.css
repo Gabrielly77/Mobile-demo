@@ -25,13 +25,13 @@ img {
   /* colors */
   --hue: 159;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 36% 57%);
-  --base-color-second: hsl(var(--hue) 65% 88%);
-  --base-color-alt: hsl(var(--hue) 57% 53%);
-  --title-color: hsl(var(--hue) 41% 10%);
-  --text-color: hsl(0 0% 46%);
-  --text-color-light: hsl(0 0% 98%);
-  --body-color: hsl(0 0% 98%);
+  --base-color: hsl(var(--hue), 36%, 57%);
+  --base-color-second: hsl(var(--hue), 65%, 88%);
+  --base-color-alt: hsl(var(--hue), 57%, 53%);
+  --title-color: hsl(var(--hue), 41%, 10%);
+  --text-color: hsl(0, 0%, 46%);
+  --text-color-light: hsl(0, 0%, 98%);
+  --body-color: hsl(0, 0%, 98%);
 
   /* fonts */
   --title-font-size: 1.875rem;
@@ -251,7 +251,7 @@ nav .icon-close {
   transition: 0.2s;
 }
 
-nav.show div.icon-close {
+nav.show .icon-close {
   visibility: visible;
   opacity: 1;
   top: 1.5rem;
@@ -424,6 +424,7 @@ nav.show div.icon-close {
   height: auto;
   padding: 4rem 1rem;
 }
+
 .swiper-pagination-bullet-active {
   background: var(--base-color);
 }
@@ -511,7 +512,7 @@ footer .social a:hover {
   visibility: hidden;
   opacity: 0;
 
-  transition: 0.3s;
+  transition: visibility 0s, opacity 0.3s, transform 0.3s;
   transform: translateY(100%);
 }
 
@@ -521,15 +522,16 @@ footer .social a:hover {
   transform: translateY(0);
 }
 
-/*========= MEDIA QUERIS =====*/
+/*========= MEDIA QUERIES =====*/
 /* extra large devices: 1200 > */
 @media (min-width: 1200px) {
-  /*reusable classes*/
+  /* reusable classes */
   .container {
     max-width: 1120px;
     margin-left: auto;
     margin-right: auto;
   }
+
   .section {
     padding: 10rem 0;
   }
@@ -546,7 +548,7 @@ footer .social a:hover {
     height: 3.125rem;
   }
 
-  /*navigation*/
+  /* navigation */
   nav .menu {
     opacity: 1;
     visibility: visible;
@@ -572,14 +574,12 @@ footer .social a:hover {
     display: none;
   }
 
-  /*layout*/
-
+  /* layout */
   main {
     margin-top: var(--header-height);
   }
 
-  /*home*/
-
+  /* home */
   #home .container {
     grid-auto-flow: column;
     justify-content: space-between;
@@ -596,7 +596,7 @@ footer .social a:hover {
     text-align: left;
   }
 
-  /*about*/
+  /* about */
   #about .container {
     margin: 0 auto;
     grid-auto-flow: column;
@@ -604,7 +604,7 @@ footer .social a:hover {
 
   /* services */
   .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .card {
@@ -628,7 +628,7 @@ footer .social a:hover {
     max-width: 25rem;
   }
 
-  /*footer */
+  /* footer */
   footer.section {
     padding: 3.75rem 0;
   }
@@ -643,8 +643,8 @@ footer .social a:hover {
     font-size: 2.25rem;
   }
 }
-/* large devices: 1023 >*/
-/* large devices: 992 >*/
+
+/* large devices: 992 > */
 @media (min-width: 992px) {
   :root {
     --title-font-size: 2.25rem;
@@ -653,3 +653,17 @@ footer .social a:hover {
 }
 
 /* medium devices: 767 > */
+@media (max-width: 767px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
