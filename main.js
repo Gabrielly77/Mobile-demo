@@ -1,4 +1,4 @@
-//*  abre e fecha o menu quando clicar no icone: hamburguer e x */
+/*  abre e fecha o menu quando clicar no icone: hamburguer e x */
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
 
@@ -47,7 +47,7 @@ const swiper = new Swiper('.swiper-container', {
   }
 })
 
-/* ScroolReveal: Mostrar elemntos quando der scroll na página*/
+/* ScrollReveal: Mostrar elementos quando der scroll na página */
 const scrollReveal = ScrollReveal({
   origin: 'top',
   distance: '30px',
@@ -84,7 +84,7 @@ function activateMenuAtCurrentSection() {
 
   for (const section of sections) {
     const sectionTop = section.offsetTop
-    const sectionHeight = section.offsertHeight
+    const sectionHeight = section.offsetHeight
     const sectionId = section.getAttribute('id')
 
     const checkpointStart = checkpoint >= sectionTop
@@ -92,11 +92,11 @@ function activateMenuAtCurrentSection() {
 
     if (checkpointStart && checkpointEnd) {
       document
-        .querySelector('nav ul li a [href*=' + sectionId + ' ]')
+        .querySelector('nav ul li a[href*=' + sectionId + ']')
         .classList.add('active')
     } else {
       document
-        .querySelector('nav ul li a [href*=' + sectionId + ' ]')
+        .querySelector('nav ul li a[href*=' + sectionId + ']')
         .classList.remove('active')
     }
   }
@@ -106,4 +106,5 @@ function activateMenuAtCurrentSection() {
 window.addEventListener('scroll', function () {
   changeHeaderWhenScroll()
   backToTop()
+  activateMenuAtCurrentSection()
 })
