@@ -679,7 +679,7 @@ body {
 }
 /* large devices: 1023 >*/
 /* large devices: 992 >*/
-@media (min-width: 992px) {
+@media (min-width: 767px) {
   :root {
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem;
