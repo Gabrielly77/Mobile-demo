@@ -419,11 +419,17 @@ nav.show div.icon-close {
   margin-right: 0.5rem;
 }
 
-/* swiper*/
+/* swiper */
 .swiper-slide {
   height: auto;
   padding: 4rem 1rem;
 }
+
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
 .swiper-pagination-bullet-active {
   background: var(--base-color);
 }
@@ -493,64 +499,34 @@ footer .social a {
 footer .social a:hover {
   transform: translateY(-8px);
 }
-
 /* Back to top */
 .back-to-top {
-    background: var(--base-color);
-    color: var(--text-color-light);
-    position: fixed;
-    right: 1rem;
-    bottom: 1rem;
-    padding: 0.5rem;
-    clip-path: circle();
-    font-size: 1.5rem;
-    line-height: 0;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s;
-    transform: translateY(100%);
+  background: var(--base-color);
+  color: var(--text-color-light);
+
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+
+  padding: 0.5rem;
+  clip-path: circle();
+
+  font-size: 1.5rem;
+  line-height: 0;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: 0.3s;
+  transform: translateY(100%);
 }
-a {
-    text-decoration: none;
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-user agent stylesheet
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: underline;
-}
-body {
-    font: 400 1rem var(--body-font);
-    color: var(--text-color);
-    background: var(--body-color);
-    -webkit-font-smoothing: antialiased;
-}
-:root {
-    --header-height: 4.5rem;
-    --hue: 159;
-    --base-color: hsl(var(--hue) 36% 57%);
-    --base-color-second: hsl(var(--hue) 65% 88%);
-    --base-color-alt: hsl(var(--hue) 57% 53%);
-    --title-color: hsl(var(--hue) 41% 10%);
-    --text-color: hsl(0 0% 46%);
-    --text-color-light: hsl(0 0% 98%);
-    --body-color: hsl(0 0% 98%);
-    --title-font-size: 1.875rem;
-    --subtitle-font-size: 1rem;
-    --title-font: 'Poppins', sans-serif;
-    --body-font: 'DM Sans', sans-serif;
-}
-:root {
-    --swiper-navigation-size: 44px;
-}
-:root {
-    --swiper-theme-color: #007aff;
-}
+
 /*========= MEDIA QUERIES =========*/
 /* extra large devices: 1200 > */
 @media (min-width: 1200px) {
@@ -683,6 +659,3 @@ body {
 }
 
 /* medium devices: 767 > */
-﻿
-​
-
