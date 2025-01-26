@@ -710,7 +710,8 @@ body {
   .grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    /*gap: 16px;*/
+    gap:0;
     margin: 0;
     padding: 0;
   }
@@ -725,7 +726,8 @@ body {
   .grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap:0;
+    /*gap: 8px;*/
     margin: 0;
     padding: 0;
   }
