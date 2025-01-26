@@ -155,7 +155,7 @@ body {
 }
 
 .logo-alt span {
-  color: var(--base-color);
+  color: black; /* Texto "salon" em preto */
 }
 
 /*==== NAVIGATION ============================ */
@@ -480,7 +480,7 @@ footer .brand a.logo {
 }
 
 footer .brand a.logo span {
-  color: var(--base-color);
+  color: black; /* Texto "salon" em preto */
 }
 
 footer .brand p {
