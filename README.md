@@ -26,10 +26,6 @@ Desenvolvemos um site para um salão com:
 
 O objetivo deste projeto foi aplicar os conhecimentos adquiridos durante o treinamento da Rocketseat, desenvolvendo um site funcional e esteticamente agradável em um curto espaço de tempo.
 
-## Como Visualizar o Projeto
-
-Você pode visualizar o projeto [aqui](link_para_o_projeto).
-
 ## Contribuições
 
 Sinta-se à vontade para abrir issues e enviar pull requests. Toda contribuição é bem-vinda!
