@@ -455,10 +455,15 @@ nav.show div.icon-close {
 /*==== FOOTER ============================ */
 footer {
   background: var(--base-color);
+  width: 100%; /* Garante que o footer cubra toda a largura da tela */
 }
 
-footer.section {
-  padding: 4rem 0;
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1.5rem;
 }
 
 footer .logo {
@@ -469,6 +474,7 @@ footer .logo {
 footer .brand p {
   color: var(--text-color-light);
   margin-bottom: 0.75rem;
+  text-align: center;
 }
 
 footer i {
@@ -477,8 +483,9 @@ footer i {
 }
 
 footer .social {
-  grid-auto-flow: column;
-  width: fit-content;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 footer .social a {
@@ -569,8 +576,7 @@ footer .social a:hover {
   }
 
   footer .container {
-    flex-direction: column;
-    align-items: center;
+    padding: 2rem 1rem; /* Ajusta o padding para dispositivos pequenos */
   }
 }
 
@@ -758,3 +764,4 @@ footer .social a:hover {
     --subtitle-font-size: 1.125rem;
   }
 }
+  
