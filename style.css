@@ -1,4 +1,4 @@
-/*==== RESET ============================ */
+/*====  RESET ============================ */
 * {
   margin: 0;
   padding: 0;
@@ -18,20 +18,21 @@ img {
   height: auto;
 }
 
-/*==== VARIABLES ============================ */
+/*====  VARIABLES ============================ */
 :root {
   --header-height: 4.5rem;
 
   /* colors */
   --hue: 159;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 36% 57%);
-  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color: #00ff00;
+  --base-color-second: #00ff00;
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(var(--hue) 41% 10%);
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
+  --dark-green: #008000; /* Verde mais escuro */
 
   /* fonts */
   --title-font-size: 1.875rem;
@@ -51,6 +52,7 @@ body {
   color: var(--text-color);
   background: var(--body-color);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden; /* Prevents horizontal overflow */
 }
 
 .title {
@@ -155,7 +157,7 @@ body {
   color: var(--body-color);
 }
 
-/*==== NAVIGATION ============================ */
+/*====  NAVIGATION ============================ */
 nav {
   height: var(--header-height);
   display: flex;
@@ -183,9 +185,11 @@ nav ul li a::after {
   width: 0%;
   height: 2px;
   background: var(--base-color);
+
   position: absolute;
   left: 0;
   bottom: -1.5rem;
+
   transition: width 0.2s;
 }
 
@@ -209,12 +213,16 @@ nav .menu ul {
 nav.show .menu {
   opacity: 1;
   visibility: visible;
+
   background: var(--body-color);
+
   height: 100vh;
   width: 100vw;
+
   position: fixed;
   top: 0;
   left: 0;
+
   display: grid;
   place-content: center;
 }
@@ -237,9 +245,11 @@ nav.show ul.grid {
 nav .icon-close {
   visibility: hidden;
   opacity: 0;
+
   position: absolute;
   top: -1.5rem;
   right: 1.5rem;
+
   transition: 0.2s;
 }
 
@@ -249,7 +259,7 @@ nav.show div.icon-close {
   top: 1.5rem;
 }
 
-/*==== HOME ============================ */
+/*====  HOME ============================ */
 #home {
   overflow: hidden;
 }
@@ -297,7 +307,7 @@ nav.show div.icon-close {
   margin-bottom: 2rem;
 }
 
-/*==== ABOUT ============================ */
+/*====  ABOUT ============================ */
 #about {
   background: white;
 }
@@ -335,7 +345,7 @@ nav.show div.icon-close {
   margin-right: 1.5rem;
 }
 
-/*==== SERVICES ============================ */
+/*====  SERVICES ============================ */
 .cards.grid {
   gap: 1.5rem;
 }
@@ -360,7 +370,7 @@ nav.show div.icon-close {
   margin-bottom: 0.75rem;
 }
 
-/*==== TESTIMONIALS ============================ */
+/*====  TESTIMONIALS ============================ */
 #testimonials {
   background: white;
 }
@@ -417,11 +427,16 @@ nav.show div.icon-close {
   padding: 4rem 1rem;
 }
 
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
 .swiper-pagination-bullet-active {
   background: var(--base-color);
 }
 
-/*==== CONTACT ============================ */
+/*====  CONTACT ============================ */
 #contact .grid {
   gap: 4rem;
 }
@@ -448,7 +463,6 @@ nav.show div.icon-close {
 #contact ul li i {
   color: var(--base-color);
 }
-
 
 /*====  FOOTER ============================ */
 footer {
@@ -487,64 +501,34 @@ footer .social a {
 footer .social a:hover {
   transform: translateY(-8px);
 }
-
 /* Back to top */
 .back-to-top {
-    background: var(--base-color);
-    color: var(--text-color-light);
-    position: fixed;
-    right: 1rem;
-    bottom: 1rem;
-    padding: 0.5rem;
-    clip-path: circle();
-    font-size: 1.5rem;
-    line-height: 0;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s;
-    transform: translateY(100%);
+  background: var(--base-color);
+  color: var(--text-color-light);
+
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+
+  padding: 0.5rem;
+  clip-path: circle();
+
+  font-size: 1.5rem;
+  line-height: 0;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: 0.3s;
+  transform: translateY(100%);
 }
-a {
-    text-decoration: none;
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-user agent stylesheet
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: underline;
-}
-body {
-    font: 400 1rem var(--body-font);
-    color: var(--text-color);
-    background: var(--body-color);
-    -webkit-font-smoothing: antialiased;
-}
-:root {
-    --header-height: 4.5rem;
-    --hue: 159;
-    --base-color: hsl(var(--hue) 36% 57%);
-    --base-color-second: hsl(var(--hue) 65% 88%);
-    --base-color-alt: hsl(var(--hue) 57% 53%);
-    --title-color: hsl(var(--hue) 41% 10%);
-    --text-color: hsl(0 0% 46%);
-    --text-color-light: hsl(0 0% 98%);
-    --body-color: hsl(0 0% 98%);
-    --title-font-size: 1.875rem;
-    --subtitle-font-size: 1rem;
-    --title-font: 'Poppins', sans-serif;
-    --body-font: 'DM Sans', sans-serif;
-}
-:root {
-    --swiper-navigation-size: 44px;
-}
-:root {
-    --swiper-theme-color: #007aff;
-}
+
 /*========= MEDIA QUERIES =========*/
 /* extra large devices: 1200 > */
 @media (min-width: 1200px) {
