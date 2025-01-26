@@ -528,9 +528,6 @@ footer .social a:hover {
   transform: translateY(0);
 }
 
-.back-to-top i {
-  color: #ffffff; /* Cor branca para a setinha */
-}
 
 /*========= MEDIA QUERIES =========*/
 /* extra large devices: 1200 > */
