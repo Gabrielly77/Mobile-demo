@@ -51,7 +51,7 @@ body {
   color: var(--text-color);
   background: var(--body-color);
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden; /* Previene o overflow horizontal */
+  overflow-x: hidden; /* Prevents horizontal overflow */
 }
 
 .title {
