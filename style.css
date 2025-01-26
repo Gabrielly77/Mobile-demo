@@ -16,7 +16,6 @@ a {
 img {
   width: 100%;
   height: auto;
-  loading: lazy; /* Lazy loading para imagens */
 }
 
 /*==== VARIABLES ============================ */
@@ -25,7 +24,6 @@ img {
 
   /* colors */
   --hue: 159;
-  /* HSL color mode */
   --base-color: hsl(var(--hue) 36% 57%);
   --base-color-second: hsl(var(--hue) 65% 88%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
@@ -130,7 +128,6 @@ body {
   border-bottom: 1px solid #e4e4e4;
   margin-bottom: 2rem;
   display: flex;
-
   position: fixed;
   top: 0;
   left: 0;
@@ -177,7 +174,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-  color: var (--base-color);
+  color: var(--base-color);
 }
 
 nav ul li a::after {
