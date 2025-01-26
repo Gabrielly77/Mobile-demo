@@ -144,7 +144,7 @@ body {
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
 }
 
-/*==== LOGO ============================ */
+/*====  LOGO ============================ */
 .logo {
   font: 700 1.31rem var(--title-font);
   color: var(--title-color);
@@ -155,7 +155,7 @@ body {
 }
 
 .logo-alt span {
-  color: black; /* Texto "salon" em preto */
+  color: var(--body-color);
 }
 
 /*==== NAVIGATION ============================ */
@@ -452,7 +452,7 @@ nav.show div.icon-close {
   color: var(--base-color);
 }
 
-/*==== FOOTER ============================ */
+
 /*====  FOOTER ============================ */
 footer {
   background: var(--base-color);
