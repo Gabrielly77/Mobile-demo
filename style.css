@@ -679,7 +679,7 @@ body {
 }
 /* large devices: 1023 >*/
 /* large devices: 992 >*/
-/*@media (min-width: 767px) {
+@media (min-width: 767px) {
   :root {
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem;
@@ -687,59 +687,3 @@ body {
 }
 
 /* medium devices: 767 > */
-/* Remove espaços em branco para dispositivos grandes */
-@media (min-width: 1023px) {
-  body {
-    margin: 0;
-    padding: 0;
-  }
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  .grid {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-/* Configurações mais específicas */
-@media (min-width: 992px) {
-  .grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-     margin: 0;
-    padding: 0;
-  }
-  .section {
-    padding: 60px 0;
-    margin: 0;
-  }
-}
-
-/* Média dispositivos */
-@media (min-width: 767px) and (max-width: 991px) {
-  .grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin: 0;
-    padding: 0;
-  }
-  .section {
-  padding: 40px 0;
-  margin: 0;
-  }
-}
-
-/* Remover margens e paddings de imagens para garantir que não causem gaps */
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0;
-}
