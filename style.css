@@ -710,14 +710,12 @@ body {
   .grid {
     display: flex;
     flex-wrap: wrap;
-    /*gap: 16px;*/
-    gap:0;
-    margin: 0;
+    gap: 16px;
+     margin: 0;
     padding: 0;
   }
   .section {
-    /*padding: 60px 0;*/
-    padding: 0;
+    padding: 60px 0;
     margin: 0;
   }
 }
@@ -727,15 +725,13 @@ body {
   .grid {
     display: flex;
     flex-wrap: wrap;
-    gap:0;
-    /*gap: 8px;*/
+    gap: 8px;
     margin: 0;
     padding: 0;
   }
   .section {
-    /*padding: 40px 0;*/
-    padding: 0;
-    margin: 0;
+  padding: 40px 0;
+  margin: 0;
   }
 }
 
