@@ -471,10 +471,16 @@ footer .logo {
   margin-bottom: 1.5rem;
 }
 
+footer .brand {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
 footer .brand p {
   color: var(--text-color-light);
-  margin-bottom: 0.75rem;
-  text-align: center;
+  margin-left: 1rem;
+  text-align: left;
 }
 
 footer i {
@@ -577,6 +583,16 @@ footer .social a:hover {
 
   footer .container {
     padding: 2rem 1rem; /* Ajusta o padding para dispositivos pequenos */
+  }
+
+  footer .brand {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .social {
+    justify-content: flex-start;
+    width: 100%;
   }
 }
 
