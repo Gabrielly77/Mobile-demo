@@ -51,6 +51,7 @@ body {
   color: var(--text-color);
   background: var(--body-color);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden; /* Previene o overflow horizontal */
 }
 
 .title {
@@ -95,8 +96,11 @@ body {
 
 /*==== LAYOUT ============================ */
 .container {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  width: 100%;
+  max-width: 1120px;
+  padding: 0 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .grid {
@@ -507,8 +511,7 @@ footer .social a:hover {
 /* Small devices: < 576px */
 @media (max-width: 575.98px) {
   .container {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    padding: 0 0.5rem;
   }
 
   .section {
@@ -574,8 +577,7 @@ footer .social a:hover {
 /* Medium devices: 576px > 767px */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .container {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    padding: 0 1rem;
   }
 
   .section {
@@ -608,8 +610,7 @@ footer .social a:hover {
 /* Large devices: 768px > 992px */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .container {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    padding: 0 1.5rem;
   }
 
   .section {
@@ -643,8 +644,7 @@ footer .social a:hover {
 @media (min-width: 1200px) {
   .container {
     max-width: 1120px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0;
   }
 
   .section {
