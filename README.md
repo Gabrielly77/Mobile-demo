@@ -20,7 +20,7 @@ Desenvolvemos um site para um salão com:
 
 ## Vídeo Demostrativo
 
-[![Alt Text](https://img.youtube.com/vi/(https://www.youtube.com/watch?v=CwHSJzH6oXE)/maxresdefault.jpg)](https://www.youtube.com/watch?v=https://www.youtube.com/watch?v=CwHSJzH6oXE)
+[![Link:](https://img.youtube.com/vi/(https://www.youtube.com/watch?v=CwHSJzH6oXE)/maxresdefault.jpg)](https://www.youtube.com/watch?v=https://www.youtube.com/watch?v=CwHSJzH6oXE)
 
 ## Objetivo
 
