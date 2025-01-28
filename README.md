@@ -20,7 +20,7 @@ Desenvolvemos um site para um salão com:
 
 ## Vídeo Demostrativo
 
-[![Link:](https://img.youtube.com/vi/(https://www.youtube.com/watch?v=CwHSJzH6oXE)/maxresdefault.jpg)](https://www.youtube.com/watch?v=https://www.youtube.com/watch?v=CwHSJzH6oXE)
+[![Alt Text](https://img.youtube.com/vi/SEU_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=SEU_VIDEO_ID)
 
 ## Objetivo
 
@@ -31,4 +31,3 @@ O objetivo deste projeto foi aplicar os conhecimentos adquiridos durante o trein
 Sinta-se à vontade para abrir issues e enviar pull requests. Toda contribuição é bem-vinda!
 
 ---
-
