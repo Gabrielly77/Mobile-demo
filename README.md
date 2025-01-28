@@ -1,7 +1,3 @@
-![108-1089072_the-big-lebowski-wallpapers-2372x1440](https://user-images.githubusercontent.com/83105480/123572546-c7b2f500-d7a2-11eb-80ee-6499352bb743.jpg)
-
-
-```markdown
 # Projeto Salão
 
 Este projeto foi desenvolvido utilizando HTML, CSS e JavaScript como parte de um treinamento com a Rocketseat, ao longo de cinco dias de prática e aprendizado intensos.
@@ -21,6 +17,10 @@ Desenvolvemos um site para um salão com:
 - Informações sobre a equipe de profissionais.
 - Um formulário de contato.
 - Integração de recursos interativos para melhorar a experiência do usuário.
+
+## Vídeo Demostrativo
+
+[![Alt Text](https://img.youtube.com/vi/(https://www.youtube.com/watch?v=CwHSJzH6oXE)/maxresdefault.jpg)](https://www.youtube.com/watch?v=https://www.youtube.com/watch?v=CwHSJzH6oXE)
 
 ## Objetivo
 
